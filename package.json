@@ -1,1 +1,39 @@
-{     "devDependencies": {         "alasql": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-alasql",     "homepage": "https://github.com/npmdoc/node-npmdoc-alasql",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-alasql.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [alasql (v0.3.9)](https://github.com/agershun/alasql) [![npm package](https://img.shields.io/npm/v/npmdoc-alasql.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-alasql) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-alasql.svg)](https://travis-ci.org/npmdoc/node-npmdoc-alasql)",
+    "devDependencies": {
+        "alasql": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-alasql",
+    "keywords": [
+        "documentation",
+        "alasql"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_alasql.js",
+    "name": "npmdoc-alasql",
+    "nameAlias": "npmdoc_alasql",
+    "nameOriginal": "npmdoc-alasql",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-alasql.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
