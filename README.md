@@ -1,4 +1,7 @@
-# api documentation for  [alasql (v0.3.9)](https://github.com/agershun/alasql)  [![npm package](https://img.shields.io/npm/v/npmdoc-alasql.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-alasql) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-alasql.svg)](https://travis-ci.org/npmdoc/node-npmdoc-alasql)
+# npmdoc-alasql
+
+#### basic api documentation for  [alasql (v0.3.9)](https://github.com/agershun/alasql)  [![npm package](https://img.shields.io/npm/v/npmdoc-alasql.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-alasql) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-alasql.svg)](https://travis-ci.org/npmdoc/node-npmdoc-alasql)
+
 #### Versatile SQL database for browser or node. Handles relational data and nested JSON (noSQL). Export to and import from Excel, localStorage or IndexedDB
 
 [![NPM](https://nodei.co/npm/alasql.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/alasql)
